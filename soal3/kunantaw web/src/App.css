@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* index.css */
+.text-capital-thin {
+  @apply px-3 py-1 text-sm;
+}
+
+.border-rounded {
+  @apply px-3 py-1 rounded-full border-2 border-[#376240];
+}
+
+.border-bawah {
+  @apply border-b-2 border-[#376240];
+}
+
+.border-all {
+  @apply border-2 border-[#376240];
+}
+
+.footer-title {
+  @apply text-[#5C7F62] w-35 font-semibold;
+}
+
+.text-card {
+  @apply text-[#376240] font-semibold;
+}
+
+.footer-border {
+  @apply border-2 border-[#5C7F62];
+}
+
+.footer-garis {
+  @apply py-15 footer-border justify-start items-center;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2b384c; /* Tailwind's gray-400 */
+  border-radius: 6px;
+}
